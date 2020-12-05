@@ -10,3 +10,5 @@ To use this tool in your browser, first clone the repo and then launch a python 
     python -m http.server 1111
 
 or you could visit www.euwern.com/latex_grammarly. 
+
+![alt text](screenshot.png "demo")
