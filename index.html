@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="lib/codeflask.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/index.js"></script>
+
+    <link rel="stylesheet" href="lib/jquery-ui.css">
+    <link rel="stylesheet" href="lib/index.css">
+    <title>Latex to Text and Text to Latex - Grammarly</title>
+</head>
+<body>
+    <div id='div_msg'>
+    This tool aims to convert latex to text so that it can be checked by Grammarly. It can also convert text to latex without losing corresponding <b>'\ref'</b> and <b>'\cite'</b> tags.</div>
+    <br />
+    <br />
+    
+    <div id='div_buttons'>
+    <button id="latex_to_text" class="ui-button ui-widget ui-corner-all; float:left">Latex to Text</button> 
+    <button id="text_to_latex" class="ui-button ui-widget ui-corner-all; float: left">Text to Latex</button> 
+    <button id="clear" class="ui-button ui-widget ui-corner-all; float: left">Reset and Clear output</button> 
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="panel-container">
+        <div class="panel-left">
+            <textarea id='input1' value=''></textarea>
+        </div>
+        <div class="splitter">
+        </div>
+        <div class="panel-right">
+            <textarea id='output1' value=''></textarea>
+        </div>
+    </div>   
+</body>
+</html>

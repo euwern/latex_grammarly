@@ -1,0 +1,65 @@
+body{
+ background: rgb(0, 79, 136);
+}
+
+textarea{
+  border:none;
+  resize: none;
+  width:100%;
+  height:100%;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid silver;
+  overflow: hidden;
+ 
+  /* avoid browser level touch actions */
+  xtouch-action: none;
+}
+
+.panel-left {
+  flex: 0 0 auto;
+  /* only manually resize */
+  width: 300px;
+  min-height: 200px;
+  min-width: 20px;
+  max-width:600px;
+  white-space: nowrap;
+ 
+}
+
+.splitter {
+  flex: 0 0 auto;
+  width: 5px;  
+  background: center center no-repeat #535353;
+  min-height: 200px;
+  cursor: col-resize;  
+}
+
+.panel-right {
+  flex: 1 1 auto;
+  /* resizable */
+ 
+  width: 100%;
+  min-height: 200px;
+  /*min-width: 5000px;*/
+}
+
+.panel-right textarea {
+  background: #eee
+}
+
+#div_msg {
+ float:left;
+ background: white;
+ width: 98.5%;
+ padding: 10px 10px 10px 10px;
+}
+
+#div_buttons{
+ float: left;
+ padding: 10px 0px 10px 0px;
+ width: 100%
+}
